@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Nexus AI</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -16,8 +17,12 @@ box-sizing:border-box;
 font-family:'Inter',sans-serif;
 }
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
-background:#f7f7f2;
+background:#f6f6f3;
 color:#111;
 overflow-x:hidden;
 }
@@ -25,18 +30,19 @@ overflow-x:hidden;
 header{
 position:fixed;
 top:0;
+left:0;
 width:100%;
 padding:25px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-background:rgba(247,247,242,.85);
+background:rgba(246,246,243,.9);
 backdrop-filter:blur(15px);
 z-index:1000;
 }
 
 .logo{
-font-size:28px;
+font-size:32px;
 font-weight:900;
 }
 
@@ -53,19 +59,32 @@ font-weight:600;
 
 .hero{
 min-height:100vh;
-padding:150px 8% 80px;
+padding:140px 8% 80px;
 display:grid;
 grid-template-columns:1.1fr 1fr;
 gap:60px;
 align-items:center;
 }
 
+.tag{
+display:inline-block;
+padding:10px 18px;
+border-radius:30px;
+background:white;
+margin-bottom:25px;
+font-weight:600;
+}
+
 .hero h1{
-font-size:95px;
-line-height:.9;
+font-size:92px;
+line-height:.92;
 font-weight:900;
 letter-spacing:-4px;
 margin-bottom:25px;
+}
+
+.highlight{
+color:#b8ff3b;
 }
 
 .hero p{
@@ -98,22 +117,22 @@ background:#b8ff3b;
 color:#111;
 }
 
-.hero-card{
+.hero-image{
 height:700px;
 background:white;
 border-radius:40px;
 overflow:hidden;
-box-shadow:0 25px 60px rgba(0,0,0,.08);
+box-shadow:0 20px 60px rgba(0,0,0,.08);
 }
 
-.hero-card img{
+.hero-image img{
 width:100%;
 height:100%;
 object-fit:cover;
 }
 
 .stats{
-padding:80px 8%;
+padding:50px 8% 100px;
 display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:25px;
@@ -123,7 +142,6 @@ gap:25px;
 background:white;
 padding:40px;
 border-radius:25px;
-box-shadow:0 10px 30px rgba(0,0,0,.05);
 }
 
 .stat h2{
@@ -142,10 +160,10 @@ grid-template-columns:1fr;
 }
 
 .hero h1{
-font-size:55px;
+font-size:58px;
 }
 
-.hero-card{
+.hero-image{
 height:450px;
 }
 
@@ -153,10 +171,15 @@ height:450px;
 grid-template-columns:1fr;
 }
 
+nav{
+display:none;
+}
+
 }
 
 </style>
 </head>
+
 <body>
 
 <header>
@@ -166,6 +189,7 @@ Nexus <span>AI</span>
 </div>
 
 <nav>
+<a href="#">Home</a>
 <a href="#">Work</a>
 <a href="#">Services</a>
 <a href="#">About</a>
@@ -178,16 +202,20 @@ Nexus <span>AI</span>
 
 <div>
 
+<div class="tag">
+AI Content Agency
+</div>
+
 <h1>
-AI Content<br>
-For Modern<br>
-Brands
+Content That<br>
+Makes Brands<br>
+<span class="highlight">Stand Out</span>
 </h1>
 
 <p>
-We create ad creatives, UGC content,
-social media assets and video campaigns
-that help brands stand out online.
+Nexus AI creates ad creatives, UGC content,
+reels, social media designs and marketing
+assets for modern brands.
 </p>
 
 <div class="btns">
@@ -196,7 +224,8 @@ that help brands stand out online.
 View Work
 </a>
 
-<a href="https://wa.me/918955147302" class="btn btn-green">
+<a href="https://wa.me/918955147302"
+class="btn btn-green">
 WhatsApp
 </a>
 
@@ -204,7 +233,7 @@ WhatsApp
 
 </div>
 
-<div class="hero-card">
+<div class="hero-image">
 
 <img src="IMG20220920125625 (2) - Copy.jpg">
 
@@ -230,6 +259,3 @@ WhatsApp
 </div>
 
 </section>
-
-</body>
-</html>
