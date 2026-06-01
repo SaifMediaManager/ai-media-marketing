@@ -3,215 +3,220 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Nexus AI</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
-background:#0b0b0b;
-color:white;
+background:#f5f5f3;
+color:#111;
 overflow-x:hidden;
 }
 
 header{
 position:fixed;
-width:100%;
 top:0;
-padding:20px 8%;
+left:0;
+width:100%;
+padding:25px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-background:rgba(0,0,0,.75);
-backdrop-filter:blur(10px);
+background:rgba(245,245,243,.9);
+backdrop-filter:blur(12px);
 z-index:1000;
 }
 
 .logo{
-font-size:30px;
+font-size:32px;
 font-weight:800;
-color:#d4af37;
+}
+
+.green{
+color:#b8ff3b;
 }
 
 nav a{
-color:white;
 text-decoration:none;
-margin-left:25px;
-font-size:15px;
+color:#111;
+margin-left:35px;
+font-weight:500;
 }
 
 .hero{
 min-height:100vh;
-display:flex;
+display:grid;
+grid-template-columns:1.2fr 1fr;
 align-items:center;
-justify-content:center;
-text-align:center;
-padding:0 10%;
-background:
-radial-gradient(circle at top,#2a1d00 0%,#0b0b0b 50%);
+padding:120px 8%;
+gap:50px;
 }
 
-.hero-content h1{
-font-size:75px;
-line-height:1.1;
-margin-bottom:20px;
+.hero h1{
+font-size:90px;
+line-height:.95;
+margin-bottom:25px;
 }
 
-.hero-content span{
-color:#d4af37;
-}
-
-.hero-content p{
-max-width:800px;
-margin:auto;
+.hero p{
 font-size:20px;
-color:#d0d0d0;
+color:#555;
 line-height:1.8;
+margin-bottom:30px;
+max-width:650px;
 }
 
-.btn{
-display:inline-block;
-margin-top:35px;
-padding:16px 38px;
-background:#d4af37;
-color:black;
-font-weight:700;
+.btns{
+display:flex;
+gap:20px;
+}
+
+.btn-dark{
+background:#111;
+color:white;
+padding:16px 32px;
 border-radius:50px;
 text-decoration:none;
+font-weight:600;
 }
 
-.section{
-padding:120px 8%;
+.btn-light{
+border:1px solid #111;
+color:#111;
+padding:16px 32px;
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
 }
 
-.section-title{
-text-align:center;
-font-size:48px;
-margin-bottom:60px;
+.hero-image{
+height:650px;
+background:white;
+border-radius:40px;
+overflow:hidden;
+box-shadow:0 25px 60px rgba(0,0,0,.08);
 }
 
-.section-title span{
-color:#d4af37;
+.hero-image img{
+width:100%;
+height:100%;
+object-fit:cover;
 }
 
-.about{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:60px;
-align-items:center;
-}
-
-.card{
-background:#141414;
-padding:35px;
-border-radius:25px;
-border:1px solid rgba(212,175,55,.2);
-}
-
-.card h3{
-color:#d4af37;
-margin-bottom:15px;
-}
-
-.card p{
-color:#cfcfcf;
-line-height:1.8;
-}
-
-@media(max-width:768px){
-
-.hero-content h1{
-font-size:45px;
-}
-
-.about{
-grid-template-columns:1fr;
-}
-
-.section-title{
-font-size:34px;
-}
-
-}
 </style>
 </head>
 
 <body>
 
 <header>
-<div class="logo">Nexus AI</div>
+
+<div class="logo">
+Nexus <span class="green">AI</span>
+</div>
 
 <nav>
 <a href="#">Home</a>
-<a href="#">About</a>
 <a href="#">Work</a>
+<a href="#">Services</a>
+<a href="#">About</a>
 <a href="#">Contact</a>
 </nav>
+
 </header>
 
 <section class="hero">
 
-<div class="hero-content">
+<div>
 
 <h1>
-Content That Makes
-<span>Brands Stand Out</span>
+AI Content<br>
+For Modern<br>
+Brands
 </h1>
 
 <p>
-Nexus AI helps businesses create premium content,
-UGC creatives, social media assets, and marketing
-visuals designed to capture attention and build
-strong brand presence online.
+Nexus AI helps brands grow through premium ad creatives,
+social media content, UGC videos, reels and AI-powered
+marketing assets.
 </p>
 
-<a class="btn"
-href="https://wa.me/918955147302">
-Start a Project
+<div class="btns">
+
+<a href="#" class="btn-dark">
+View Work
+</a>
+
+<a href="https://wa.me/918955147302" class="btn-light">
+WhatsApp
 </a>
 
 </div>
 
-</section>
+</div>
 
-<section class="section">
+<div class="hero-image">
 
-<h2 class="section-title">
-About <span>Nexus AI</span>
-</h2>
-
-<div class="about">
-
-<div class="card">
-
-<h3>Founder</h3>
-
-<p>
-My name is Mohammad Saif, founder of Nexus AI.
-I focus on helping businesses improve their online
-presence through high-quality content, creative
-visuals, and AI-powered workflows.
-</p>
+<img src="IMG20220920125625 (2) - Copy.jpg">
 
 </div>
 
-<div class="card">
+</section>
+<section class="stats">
 
-<h3>Mission</h3>
+<div class="stat-box">
+<h2>50+</h2>
+<p>Creative Projects</p>
+</div>
 
-<p>
-To help modern brands stand out in a crowded
-digital world by delivering content that looks
-premium, feels authentic, and drives engagement.
-</p>
+<div class="stat-box">
+<h2>10M+</h2>
+<p>Views Generated</p>
+</div>
 
+<div class="stat-box">
+<h2>24h</h2>
+<p>Fast Delivery</p>
+</div>
+
+</section>
+
+<section class="services">
+
+<h2 class="section-title">
+What We Do
+</h2>
+
+<div class="service-grid">
+
+<div class="service-card">
+<h3>AI Ad Creatives</h3>
+<p>Create premium advertising creatives for brands and products.</p>
+</div>
+
+<div class="service-card">
+<h3>UGC Content</h3>
+<p>User-generated content videos designed for conversions.</p>
+</div>
+
+<div class="service-card">
+<h3>Reels Editing</h3>
+<p>Short-form content optimized for Instagram and YouTube.</p>
+</div>
+
+<div class="service-card">
+<h3>Social Media Design</h3>
+<p>Posts, banners, stories and complete content packages.</p>
 </div>
 
 </div>
@@ -220,158 +225,3 @@ premium, feels authentic, and drives engagement.
 
 </body>
 </html>
-<section class="section">
-
-<h2 class="section-title">
-Our <span>Services</span>
-</h2>
-
-<div class="about">
-
-<div class="card">
-<h3>AI Ad Creatives</h3>
-<p>High-converting creatives built for modern brands and advertising campaigns.</p>
-</div>
-
-<div class="card">
-<h3>UGC Content</h3>
-<p>Authentic user-generated style content that feels natural and drives engagement.</p>
-</div>
-
-<div class="card">
-<h3>Reels & Shorts</h3>
-<p>Short-form content optimized for Instagram Reels, YouTube Shorts, and TikTok.</p>
-</div>
-
-<div class="card">
-<h3>Social Media Assets</h3>
-<p>Posts, carousels, thumbnails, and branded visual content.</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="section">
-
-<h2 class="section-title">
-Image <span>Portfolio</span>
-</h2>
-
-<div class="about">
-
-<div class="card">
-<img src="IMG20220920125625 (2) - Copy.jpg"
-style="width:100%;border-radius:15px;">
-</div>
-
-<div class="card">
-<h3>Project 02</h3>
-<p>Add your brand creative image here.</p>
-</div>
-
-<div class="card">
-<h3>Project 03</h3>
-<p>Add your brand creative image here.</p>
-</div>
-
-<div class="card">
-<h3>Project 04</h3>
-<p>Add your brand creative image here.</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="section">
-
-<h2 class="section-title">
-Video <span>Portfolio</span>
-</h2>
-
-<div class="about">
-
-<div class="card">
-<h3>Video Project 01</h3>
-<p>Add your reel or video showcase here.</p>
-</div>
-
-<div class="card">
-<h3>Video Project 02</h3>
-<p>Add your reel or video showcase here.</p>
-</div>
-
-<div class="card">
-<h3>Video Project 03</h3>
-<p>Add your reel or video showcase here.</p>
-</div>
-
-<div class="card">
-<h3>Video Project 04</h3>
-<p>Add your reel or video showcase here.</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="section">
-
-<h2 class="section-title">
-Why Choose <span>Nexus AI</span>
-</h2>
-
-<div class="about">
-
-<div class="card">
-<h3>Premium Quality</h3>
-<p>Every project is designed with attention to detail and modern aesthetics.</p>
-</div>
-
-<div class="card">
-<h3>Fast Delivery</h3>
-<p>Efficient AI-powered workflows help deliver faster without sacrificing quality.</p>
-</div>
-
-<div class="card">
-<h3>Creative Strategy</h3>
-<p>Content built to grab attention and strengthen brand presence.</p>
-</div>
-
-<div class="card">
-<h3>Modern Execution</h3>
-<p>Combining creativity, marketing, and AI tools into one streamlined process.</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="section">
-
-<h2 class="section-title">
-Contact <span>Us</span>
-</h2>
-
-<div class="card" style="text-align:center; max-width:700px; margin:auto;">
-
-<h3>Let's Build Something Great</h3>
-
-<p style="margin-top:15px;">
-Ready to elevate your brand with premium content and creative marketing?
-</p>
-
-<a class="btn"
-href="https://wa.me/918955147302"
-style="margin-top:25px;">
-Chat on WhatsApp
-</a>
-
-</div>
-
-</section>
-
-<footer style="text-align:center;padding:40px;color:#888;">
-© 2026 Nexus AI • Founded by Mohammad Saif
-</footer>
