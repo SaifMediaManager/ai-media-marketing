@@ -295,7 +295,7 @@ Luxury Perfume Campaign
 
 <br>
 
-<button <button onclick="openPopup()">View Project</button>
+<button onclick="openPopup()"
 style="
 padding:12px 25px;
 border:none;
@@ -908,34 +908,11 @@ Contact On WhatsApp
 </a>
 
 </section>
+  
 
-<script>
+<!-- BUTTON + OTHER CONTENT ऊपर होगा -->
 
-function showPerfume(){
-
-alert("Perfume Gallery ");
-
-}
-
-</script>
-
-  <script>
-
-function showPerfume(){
-alert("Perfume Gallery ");
-}
-
-function openPopup(){
-  document.getElementById("popup").style.display = "block";
-}
-
-function closePopup(){
-  document.getElementById("popup").style.display = "none";
-}
-
-</script>
-
-<!-- POPUP START -->
+<!-- ================= POPUP START ================= -->
 <div id="popup" class="popup">
   <div class="popup-content">
 
@@ -956,10 +933,17 @@ function closePopup(){
 
   </div>
 </div>
-<!-- POPUP END -->
+<!-- ================= POPUP END ================= -->
 
-</body>
-</html>
+<script>
+function openPopup(){
+  document.getElementById("popup").style.display = "block";
+}
+
+function closePopup(){
+  document.getElementById("popup").style.display = "none";
+}
+</script>
 
 </body>
 </html>
