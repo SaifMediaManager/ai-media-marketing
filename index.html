@@ -919,5 +919,47 @@ alert("Perfume Gallery ");
 
 </script>
 
+  <script>
+
+function showPerfume(){
+alert("Perfume Gallery ");
+}
+
+function openPopup(){
+  document.getElementById("popup").style.display = "block";
+}
+
+function closePopup(){
+  document.getElementById("popup").style.display = "none";
+}
+
+</script>
+
+<!-- POPUP START -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+
+    <span class="close" onclick="closePopup()">×</span>
+
+    <h2>Perfume Gallery</h2>
+
+    <div class="gallery">
+      <img src="img1.jpg">
+      <img src="img2.jpg">
+      <img src="img3.jpg">
+      <img src="img4.jpg">
+      <img src="img5.jpg">
+      <img src="img6.jpg">
+      <img src="img7.jpg">
+      <img src="img8.jpg">
+    </div>
+
+  </div>
+</div>
+<!-- POPUP END -->
+
+</body>
+</html>
+
 </body>
 </html>
